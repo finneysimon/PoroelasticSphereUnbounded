@@ -8,7 +8,7 @@ We provide a brief description of how to use our notebook to solve the leading-o
  - The variables \[CapitalPhi]StarTable, \[CapitalPsi]StarTable, and \[CapitalChi]StarTable define the background flow profile. Two examples are given in our notebook corresponding to shear flow and Poiseuille flow. For each variable, the first index corresponds to L=0, the second L=1, and so on. Within each index (value of L), values correspond to m from -n to n. 
  - To implement a new background flow, these variables must be updated such that when substituted into Equation III.2 & III.3 (L is replaced with n in the paper) we recover the desired background flow without the particle. 
  - The parameter L_max must be set to be 2 higher than the highest non-zero term in \[CapitalPhi]StarTable, \[CapitalPsi]StarTable, or \[CapitalChi]StarTable. For example, shear flow, which has a non-zero value when L=2, we set L_max=4; for Poiseuille flow we instead set L_max=5. NOTE: projection terms must also be calculated using a value grater than or equal to your desired L_max. In the current saved version we set L_max=5 when generating the projection terms, making it suitable for both shear flow and Poiseuille flow.
- - 
+   
 ### Fluid problem
  - The fluid problem is defined by the statements EQN1, EQN2, EQN3, EQN4, and EQN5, which are equivalent to III.10-III.13.
  - To solve the fluid problem we use the built-in Mathematica function 'Solve', calculating the unknown coefficient tables \[CapitalPhi]HatTable, \[CapitalPsi]HatTable, \[CapitalChi]HatTable, PHatTable.
