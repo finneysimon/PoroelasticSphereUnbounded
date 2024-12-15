@@ -1,4 +1,4 @@
-# PoroelasticSphereUnbounded
+# Poroelastic Sphere Unbounded
 The small deformation of a weakly deformable poroelastic particle in a general unbounded Stokes flow. Mathematical details may be found in (insert DOI when published).
 
 There are two notebooks: 'GeneratePorjectionTerms.nb' and 'Weakly_deformable_poroelastic_sphere_in_a_general_unbounded_Stokes_flow.nb'. The former is used purely to generate the file 'ProjectionTerms.wl' and does not need to be edited if using a background shear or Poiseuille flow. 'ProjectionTerms.wl' stores the terms in Equation III.36 as projected to a spherical harmonic basis via Equation III.37. The latter notebook may be edited and describes the fluid and solid problems to be solved (Equations III.10-III.13 for the fluid problem, III.32-III.35 for the solid problem). 
