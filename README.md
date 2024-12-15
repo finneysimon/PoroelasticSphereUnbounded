@@ -3,7 +3,7 @@ The small deformation of a weakly deformable poroelastic particle in a general u
 
 There are two notebooks: 'GeneratePorjectionTerms.nb' and 'Weakly_deformable_poroelastic_sphere_in_a_general_unbounded_Stokes_flow.nb'. The former is used purely to generate the file 'ProjectionTerms.wl' and does not need to be edited if using a background shear or Poiseuille flow. 'ProjectionTerms.wl' stores the terms in Equation III.36 as projected to a spherical harmonic basis via Equation III.37. The latter notebook may be edited and describes the fluid and solid problems to be solved (Equations III.10-III.13 for the fluid problem, III.32-III.35 for the solid problem). 
 
-## Weakly_deformable_poroelastic_sphere_in_a_general_unbounded_Stokes_flow.nb
+### Weakly_deformable_poroelastic_sphere_in_a_general_unbounded_Stokes_flow.nb
 We provide a brief description of how to use our notebook to solve the leading-order fluid flow and the corresponding particle deformation. Please download the file and load into Mathematica to view due to symbolic language used in the notebook.
  - The variables \[CapitalPhi]StarTable, \[CapitalPsi]StarTable, and \[CapitalChi]StarTable define the background flow profile. Two examples are given in our notebook corresponding to shear flow and Poiseuille flow. For each variable, the first index corresponds to L=0, the second L=1, and so on. Within each index (value of L), values correspond to m from -n to n. 
  - To implement a new background flow, these variables must be updated such that when substituted into Equation III.2 & III.3 (L is replaced with n in the paper) we recover the desired background flow without the particle. 
